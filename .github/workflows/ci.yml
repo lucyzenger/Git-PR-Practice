@@ -72,3 +72,5 @@ jobs:
           AWS_DEFAULT_REGION: us-west-2
 
       - name: Publish wheel to CodeArtifact
+        run: twine upload -r codeartifact dist/*.whl
+
